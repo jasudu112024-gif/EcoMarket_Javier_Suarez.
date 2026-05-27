@@ -1,0 +1,105 @@
+.hero-banner {
+    width: 100%;
+    height: 70vh; 
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/products/hero/bg-hero.jpg');
+  
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+   
+    display: flex;
+    align-items: center; 
+    padding-left: 10%; 
+    }
+
+.hero-badge {
+    color: var(--blanco);
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 6px 16px;
+    border-radius: 20px; 
+    font-size: 0.85rem; 
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.hero-title {
+    color: var(--blanco);
+    font-size: 3.5rem; 
+    font-family: 'Georgia', serif; 
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.9); 
+    max-width: 500px; 
+    margin-bottom: 30px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px; 
+}
+
+
+.boton {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 25px; 
+    font-weight: 500;
+    transition: all 0.3s ease; 
+}
+
+
+.boton-primary {
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+}
+
+.boton-primary:hover {
+    background-color: #27ae60; 
+    transform: translateY(-2px); 
+}
+
+
+.boton-secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--blanco);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.boton-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.featured-section {
+    padding: 60px 10%; 
+    background-color: var(--blanco);
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 5px;
+}
+
+.section-header p {
+    color: #666;
+}
+
+
+.products-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
