@@ -1,22 +1,29 @@
 .hero-banner {
     width: 100%;
     height: 70vh; 
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/products/hero/bg-hero.jpg');
   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/products/Cultivo_de_cannabis1.jpg');
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;
 
-   
+    
     display: flex;
-    align-items: center; 
-    padding-left: 10%; 
-    }
+    align-items: center;        
+    padding-left: 10%;
+    -webkit-text-stroke: 0.5px white;         
+}
 
+
+.hero-content {
+    display: flex;
+    flex-direction: column;     
+    align-items: flex-start;   
+    max-width: 600px;           
+    }
 .hero-badge {
-    color: var(--blanco);
-    background-color: rgba(255, 255, 255, 0.2); 
+    color: var(--blanco1);
+    background-color: rgba(43, 255, 0, 0.2); 
     padding: 6px 16px;
     border-radius: 20px; 
     font-size: 0.85rem; 
@@ -26,7 +33,7 @@
 
 
 .hero-title {
-    color: var(--blanco);
+    color: var(--blanco1);
     font-size: 3.5rem; 
     font-family: 'Georgia', serif; 
     line-height: 1.2;
@@ -38,6 +45,9 @@
     color: rgba(255, 255, 255, 0.9); 
     max-width: 500px; 
     margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: 20px
+    
 }
 
 
@@ -58,7 +68,7 @@
 
 .boton-primary {
     background-color: var(--verde-principal);
-    color: var(--blanco);
+    color: var(--blanco1);
 }
 
 .boton-primary:hover {
@@ -69,8 +79,8 @@
 
 .boton-secondary {
     background-color: rgba(255, 255, 255, 0.1);
-    color: var(--blanco);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--blanco1);
+    border: 1px solid rgba(99, 99, 99, 0.4);
 }
 
 .boton-secondary:hover {
@@ -102,4 +112,144 @@
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px; 
+}
+
+.main-header {
+    display: flex !important; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgb(143, 143, 143); 
+    }
+
+
+.nav-menu {
+    display: flex !important;
+    flex-direction: row !important; 
+    gap: 30px;
+}
+
+
+
+.catalog-container {
+    display: flex !important;
+    flex-direction: row !important; 
+    gap: 40px;                    
+    padding: 40px 5%;             
+    align-items: flex-start;       
+}
+
+
+.catalog-sidebar {
+    width: 260px;                   
+    flex-shrink: 0;                 
+    background-color: rgba(255, 255, 255, 0.05); 
+    padding: 25px;
+    border-radius: 16px;           
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;           
+}
+
+.filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+
+.catalog-content {
+    flex-grow: 1;                  
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.catalog-sidebar h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--texto-oscuro); /
+}
+
+
+.filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--texto-oscuro); 
+    cursor: pointer;
+}
+
+
+.price-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+    color: var(--texto-oscuro);
+    font-size: 0.85rem;
+}
+
+
+.catalog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.products-grid {
+    flex-grow: 1;
+}
+
+
+@media (max-width: 768px) {
+  
+    .catalog-container {
+        flex-direction: column !important;
+        gap: 20px;
+        padding: 20px 4%;
+    }
+
+   
+    .catalog-sidebar {
+        width: 100%;
+    }
+
+   
+    .filter-group {
+        flex-direction: row;
+        flex-wrap: wrap; 
+        gap: 15px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+.catalog-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px;
+    flex-grow: 1; 
+}
+
+
+.products-grid {
+    display: grid !important; 
+    grid-template-columns: repeat(3, 1fr) !important; 
+    gap: 30px !important; 
+    width: 100% !important; 
 }

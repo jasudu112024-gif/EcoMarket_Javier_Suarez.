@@ -5,11 +5,16 @@
 }
 
 :root {
-    --blanco: #d8d8d8;
+    --blanco1: #ffffff;
+    --blanco: #baf5c9;
     --texto-oscuro: #1a1a1a;
     --verde-principal: #2ecc71;
     --gris-claro: #f8f9fa;
-    --fuente: 'Courier New', Courier, monospace; ;
+    --fuente: 'Courier New', Courier, monospace; 
+    --accent-green: #00ff88; 
+    --text-green: #a3e635;
+    --text-light: #ffffff;
+    --text-muted: #94a3b8;
 }
 
 body {
