@@ -5,40 +5,42 @@
 }
 
 :root {
+   
     --blanco1: #ffffff;
-    --blanco: #baf5c9;
+    --blanco: #baf5c9;              
     --texto-oscuro: #1a1a1a;
-    --verde-principal: #2ecc71;
+    --verde-principal: #2ecc71;     
+    --verde-oscuro: #1b5e20;
     --gris-claro: #f8f9fa;
+    
     --fuente: 'Courier New', Courier, monospace; 
-    --accent-green: #00ff88; 
-    --text-green: #a3e635;
-    --text-light: #ffffff;
-    --text-muted: #94a3b8;
+    
+    --accent-green: #2ecc71; 
+    --text-light: #1a1a1a;
+    --text-muted: #666666;
 }
 
 body {
     font-family: var(--fuente);
     color: var(--texto-oscuro);
     background-color: var(--blanco);
+    overflow-x: hidden; 
 }
 
-.mainea-hder {
+
+.main-header {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-
     padding: 20px 5%;
-    background-color: var(--blanco);
-    border-bottom: 1px solid #eee; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
 }
-
 
 .nav-menu {
     display: flex;
     gap: 30px; 
 }
-
 
 .nav-link {
     text-decoration: none; 
@@ -50,7 +52,6 @@ body {
 .nav-link:hover {
     color: var(--verde-principal); 
 }
-
 
 .header-icons {
     display: flex;

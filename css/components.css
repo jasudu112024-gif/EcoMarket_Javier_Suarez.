@@ -16,14 +16,13 @@
     transition: all 0.3s ease;
 }
 
-
 .category-btn.active, .category-btn:hover {
     background-color: var(--verde-principal);
     border-color: var(--verde-principal);
     color: var(--blanco);
 }
 
-
+/* --- Tarjetas de Producto (Grid) --- */
 .product-card {
     background-color: var(--blanco);
     border-radius: 12px;
@@ -32,12 +31,10 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .product-card:hover {
     transform: translateY(-5px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); 
 }
-
 
 .card-image-container {
     position: relative;
@@ -48,13 +45,11 @@
     align-items: center;
 }
 
-
 .card-image-container img {
     width: 100%; 
     height: 100%; 
     object-fit: cover; 
 }
-
 
 .badge-best {
     position: absolute;
@@ -67,7 +62,6 @@
     padding: 4px 8px;
     border-radius: 4px;
 }
-
 
 .fav-btn {
     position: absolute;
@@ -82,7 +76,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
+/* --- Información de Tarjeta --- */
 .card-info {
     padding: 20px;
 }
@@ -112,7 +106,6 @@
     line-height: 1.4;
 }
 
-
 .add-to-cart-btn {
     width: 100%;
     background-color: #f5f5f5;
@@ -128,13 +121,7 @@
     background-color: #e0e0e0;
 }
 
-.card-image-container img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-}
-
-
+/* --- Elementos del Header Global --- */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -142,14 +129,12 @@
     text-decoration: none;
 }
 
-
 .nav-link {
     color: var(--text-light);   
     text-decoration: none;     
     font-weight: 500;
     transition: color 0.3s ease; 
 }
-
 
 .nav-link:hover {
     color: var(--accent-green); 
@@ -162,15 +147,16 @@
     cursor: pointer;
 }
 
-
+/* --- Componente de Paginación (Unificado) --- */
 .pagination {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 50px; 
     margin-bottom: 20px;
+    width: 100%; 
 }
-
 
 .page-btn {
     background-color: var(--gris-claro);
@@ -187,18 +173,55 @@
     transition: all 0.3s ease;
 }
 
-
 .page-btn.active, .page-btn:hover {
     background-color: var(--verde-principal);
     border-color: var(--verde-principal);
     color: white;
 }
 
-.pagination {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 10px;
-    margin-top: 50px; 
-    width: 100%; 
+
+.testimonials-section {
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.02); 
+}
+
+.testimonials-header {
+    text-align: center;
+}
+
+.testimonials-header h2 {
+    font-size: 2rem;
+    color: var(--texto-oscuro);
+    margin-bottom: 10px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.61); 
+    padding: 30px;
+    border-radius: 16px;
+    border-left: 4px solid var(--verde-principal); 
+    margin: 0;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #2d3748;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: var(--texto-oscuro);
+    font-style: normal;
+    display: block;
 }
