@@ -22,7 +22,6 @@
     color: var(--blanco);
 }
 
-/* --- Tarjetas de Producto (Grid) --- */
 .product-card {
     background-color: var(--blanco);
     border-radius: 12px;
@@ -76,7 +75,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* --- Información de Tarjeta --- */
+
 .card-info {
     padding: 20px;
 }
@@ -121,7 +120,7 @@
     background-color: #e0e0e0;
 }
 
-/* --- Elementos del Header Global --- */
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -145,38 +144,6 @@
     gap: 20px;
     color: var(--text-light);
     cursor: pointer;
-}
-
-/* --- Componente de Paginación (Unificado) --- */
-.pagination {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 10px;
-    margin-top: 50px; 
-    margin-bottom: 20px;
-    width: 100%; 
-}
-
-.page-btn {
-    background-color: var(--gris-claro);
-    border: 1px solid #ddd;
-    color: var(--texto-oscuro);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.page-btn.active, .page-btn:hover {
-    background-color: var(--verde-principal);
-    border-color: var(--verde-principal);
-    color: white;
 }
 
 
@@ -224,4 +191,153 @@
     color: var(--texto-oscuro);
     font-style: normal;
     display: block;
+}
+
+/* COMPONENTES DE CONTACTO */
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    color: var(--texto-oscuro);
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.eco-message {
+    border-left: 3px solid var(--verde-principal);
+    padding-left: 15px;
+    font-style: italic;
+}
+
+.contact-form {
+    background-color: var(--blanco1);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+/* COMPONENTES DEL FOOTER */
+.footer-brand h4,
+.footer-links h4,
+.footer-newsletter h4 {
+    color: var(--verde-principal);
+    margin-bottom: 15px;
+}
+
+.footer-brand p,
+.footer-newsletter p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.newsletter-box {
+    display: flex;
+    gap: 5px;
+}
+
+.newsletter-box input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.newsletter-box button {
+    background-color: var(--verde-principal);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* ==========================================
+   MEDIA QUERIES - RESPONSIVE (COMPONENTES)
+   ========================================== */
+
+   @media (max-width: 768px) {
+    
+    /* Ajustes del Header Global */
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    /* El menú de navegación se distribuye mejor */
+    .nav-menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+    }
+
+    /* Títulos un poco más pequeños en móvil para que no rompan línea feo */
+    .catalog-header h2, 
+    .contact-header h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Tarjetas de producto más compactas */
+    .card-info {
+        padding: 15px;
+    }
+
+    .card-title-price h3 {
+        font-size: 1.1rem;
+    }
 }

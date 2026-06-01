@@ -1,0 +1,44 @@
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.product-card {
+    animation: fadeInUp 1.6s ease backwards;
+}
+
+
+.product-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-to-cart-btn, .boton {
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.add-to-cart-btn:hover, .boton:hover {
+    transform: scale(1.03);
+}
+
+
+.fav-btn {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.fav-btn:hover {
+    transform: scale(1.2);
+}
