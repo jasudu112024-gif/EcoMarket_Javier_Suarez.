@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
 </head>
 
 <body>
 
     <header class="main-header">
-
         <div class="logo">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--verde-principal); vertical-align: middle; margin-right: 8px;"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.58-1 9.5A7 7 0 0 1 11 20z"></path><path d="M19 2c-2.26 4.33-5.27 7.14-8 10"></path></svg>
             <span>EcoMarket</span>
@@ -25,13 +25,14 @@
             <a href="contacto.html" class="nav-link">Contacto</a>
         </nav>
         <div class="header-icons">
-            <span>🔍</span>
-            <span>🛒</span>
+            <a href="#newsletter-foot" title="Buscar" style="text-decoration: none;"><span>🔍</span></a>
+            <a href="productos.html" title="Carrito" style="text-decoration: none;"><span>🛒</span></a>
         </div>
     </header>
 
     <main class="catalog-container">
         
+       
         <input type="radio" name="category-filter" id="all" checked hidden>
         <input type="radio" name="category-filter" id="kitchen" hidden>
         <input type="radio" name="category-filter" id="zero-waste" hidden>
@@ -59,7 +60,6 @@
                     <div class="card-image-container">
                         <span class="badge-best">BIODEGRADABLE</span>
                         <img src="../img/products/51N9evzJYgL._AC_UF1000,1000_QL80_.jpg" alt="Cepillo de Dientes de Bambú">
-                        
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Cepillo de Bambú</h3><span class="price">$12.00</span></div>
@@ -72,7 +72,6 @@
                     <div class="card-image-container">
                         <span class="badge-best">REUTILIZABLE</span>
                         <img src="../img/products/BOTELLA.jpg" alt="Botella de Vidrio">
-                       
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Botella de Vidrio</h3><span class="price">$24.00</span></div>
@@ -85,7 +84,6 @@
                     <div class="card-image-container">
                         <span class="badge-best">ORGÁNICO</span>
                         <img src="../img/products/BOLSA.webp" alt="Bolsas de Algodón">
-                       
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Bolsas Ecológicas</h3><span class="price">$15.00</span></div>
@@ -97,8 +95,7 @@
                 <article class="product-card personal-care">
                     <div class="card-image-container">
                         <span class="badge-best">NATURAL</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Champú Sólido">
-                        
+                        <img src="../img/products/champusolido.avif" alt="Champú Sólido">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Champú Sólido</h3><span class="price">$14.00</span></div>
@@ -107,37 +104,10 @@
                     </div>
                 </article>
 
-                <article class="product-card kitchen">
-                    <div class="card-image-container">
-                        <span class="badge-best">ECOLÓGICO</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Envoltorios de Cera de Abeja">
-                        
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title-price"><h3>Envoltorios de Cera</h3><span class="price">$18.00</span></div>
-                        <p class="card-description">Alternativa natural reutilizable al papel film para el almacenamiento de alimentos.</p>
-                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
-                    </div>
-                </article>
-
-                <article class="product-card zero-waste">
-                    <div class="card-image-container">
-                        <span class="badge-best">RECICLABLE</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Pajitas de Metal">
-                        
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title-price"><h3>Pajitas de Metal</h3><span class="price">$10.00</span></div>
-                        <p class="card-description">Pajitas de acero inoxidable de primera calidad con cepillo de limpieza incluido.</p>
-                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
-                    </div>
-                </article>
-
                 <article class="product-card personal-care">
                     <div class="card-image-container">
                         <span class="badge-best">VEGANO</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Desodorante Natural">
-                       
+                        <img src="../img/products/desodorante.jpg" alt="Desodorante Natural">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Desodorante Eco</h3><span class="price">$11.00</span></div>
@@ -146,24 +116,10 @@
                     </div>
                 </article>
 
-                <article class="product-card kitchen">
-                    <div class="card-image-container">
-                        <span class="badge-best">BIODEGRADABLE</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Cuencos de Coco">
-                       
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title-price"><h3>Cuencos de Coco</h3><span class="price">$22.00</span></div>
-                        <p class="card-description">Cáscaras de coco recuperadas y hechas a mano, ideales para batidos.</p>
-                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
-                    </div>
-                </article>
-
                 <article class="product-card zero-waste">
                     <div class="card-image-container">
                         <span class="badge-best">COMPOSTABLE</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Bolsas de Basura Compostables">
-                       
+                        <img src="../img/products/bolsacompos.jpeg" alt="Bolsas de Basura Compostables">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Bolsas de Compost</h3><span class="price">$13.00</span></div>
@@ -175,8 +131,7 @@
                 <article class="product-card personal-care">
                     <div class="card-image-container">
                         <span class="badge-best">ALGODÓN</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Discos Desmaquillantes Reutilizables">
-                     
+                        <img src="../img/products/discos.jpeg" alt="Discos Desmaquillantes Reutilizables">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Discos Reutilizables</h3><span class="price">$16.00</span></div>
@@ -188,12 +143,11 @@
                 <article class="product-card kitchen">
                     <div class="card-image-container">
                         <span class="badge-best">MADERA</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Cepillo para Platos">
-                      
+                        <img src="../img/products/cepillosplatos.jpg" alt="Cepillo para Platos">
                     </div>
                     <div class="card-info">
-                        <div class="card-title-price"><h3>Cepillo para Platos</h3><span class="price">$9.00</span></div>
-                        <p class="card-description">Cepillo de limpieza de bambú con cerdas vegetales duraderas de sisal.</p>
+                        <div class="card-title-price"><h3>Cepillos para Platos</h3><span class="price">$9.00</span></div>
+                        <p class="card-description">Cepillos de limpieza de bambú con cerdas vegetales duraderas de sisal.</p>
                         <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
                     </div>
                 </article>
@@ -201,8 +155,7 @@
                 <article class="product-card zero-waste">
                     <div class="card-image-container">
                         <span class="badge-best">PORTÁTIL</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Cubiertos de Viaje">
-                     
+                        <img src="../img/products/Set-de-cubiertos-Eco.jpg" alt="Cubiertos de Viaje">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Cubiertos de Viaje</h3><span class="price">$19.00</span></div>
@@ -210,25 +163,11 @@
                         <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
                     </div>
                 </article>
-
-                <article class="product-card personal-care">
-                    <div class="card-image-container">
-                        <span class="badge-best">PREMIUM</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Afeitadora de Seguridad">
-                        
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title-price"><h3>Maquinilla Clásica</h3><span class="price">$35.00</span></div>
-                        <p class="card-description">Afeitadora de seguridad metálica diseñada para eliminar rastros de plástico.</p>
-                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
-                    </div>
-                </article>
-
+               
                 <article class="product-card kitchen">
                     <div class="card-image-container">
                         <span class="badge-best">SILICONA</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Tapetes para Hornear">
-                      
+                        <img src="../img/products/tapete.jpeg" alt="Tapetes para Hornear">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Tapetes de Horno</h3><span class="price">$26.00</span></div>
@@ -240,8 +179,7 @@
                 <article class="product-card zero-waste">
                     <div class="card-image-container">
                         <span class="badge-best">MINIMALISTA</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Cuaderno Ecológico">
-                        
+                        <img src="../img/products/cuaderno.jpeg" alt="Cuaderno Ecológico">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Cuaderno Eco</h3><span class="price">$14.00</span></div>
@@ -250,24 +188,10 @@
                     </div>
                 </article>
 
-                <article class="product-card personal-care">
-                    <div class="card-image-container">
-                        <span class="badge-best">ORGANICO</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Bastoncillos de Algodón">
-                        
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title-price"><h3>Bastoncillos Eco</h3><span class="price">$6.00</span></div>
-                        <p class="card-description">Bastoncillos de algodón de bambú biodegradables para una higiene segura.</p>
-                        <button class="add-to-cart-btn">🛒 Agregar al Carrito</button>
-                    </div>
-                </article>
-
                 <article class="product-card kitchen">
                     <div class="card-image-container">
                         <span class="badge-best">ORGANIZADO</span>
                         <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Frascos de Almacenamiento">
-                        
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Frascos de Vidrio</h3><span class="price">$28.00</span></div>
@@ -279,8 +203,7 @@
                 <article class="product-card zero-waste">
                     <div class="card-image-container">
                         <span class="badge-best">CONSCIENTE</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Filtro de Café de Tela">
-                        
+                        <img src="../img/products/filtro.jpg" alt="Filtro de Café de Tela">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Filtro de Tela</h3><span class="price">$12.00</span></div>
@@ -292,8 +215,7 @@
                 <article class="product-card personal-care">
                     <div class="card-image-container">
                         <span class="badge-best">MADERA</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Cepillo para el Pelo de Bambú">
-                        
+                        <img src="../img/products/cepillopelo.jpeg" alt="Cepillo para el Pelo de Bambú">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Cepillo de Pelo</h3><span class="price">$15.00</span></div>
@@ -305,8 +227,7 @@
                 <article class="product-card kitchen">
                     <div class="card-image-container">
                         <span class="badge-best">REUTILIZABLE</span>
-                        <img src="https://www.univalle.edu.co/media/k2/items/cache/bc0dafff2a953777f6b7d4ce63e1f694_XL.jpg" alt="Bolsas de Silicona para Alimentos">
-                       
+                        <img src="../img/products/images.jpeg" alt="Bolsas de Silicona para Alimentos">
                     </div>
                     <div class="card-info">
                         <div class="card-title-price"><h3>Bolsas de Silicona</h3><span class="price">$20.00</span></div>
@@ -316,8 +237,8 @@
                 </article>
 
             </div>
-
-
+        </section>
+    </main> 
 
     <footer class="main-footer">
         <div class="footer-grid">
@@ -333,13 +254,13 @@
                     <li><a href="#">Preguntas Frecuentes</a></li>
                 </ul>
             </div>
-            <div class="footer-newsletter">
+            <div class="footer-newsletter" id="newsletter-foot">
                 <h4>Newsletter</h4>
                 <p>Suscríbete para recibir tips ecológicos y ofertas.</p>
-                <div class="newsletter-box">
-                    <input type="email" placeholder="Tu correo">
-                    <button type="button">Ok</button>
-                </div>
+                <form class="newsletter-box" action="#" method="GET">
+                    <input type="email" placeholder="Tu correo" required>
+                    <button type="submit">Ok</button>
+                </form>
             </div>
         </div>
         <div class="footer-bottom">
@@ -348,4 +269,3 @@
     </footer>
 </body>
 </html>
-

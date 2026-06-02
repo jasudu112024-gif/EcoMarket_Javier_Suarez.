@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
 </head>
 <body>
 
     <header class="main-header">
-       
         <div class="logo">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--verde-principal); vertical-align: middle; margin-right: 8px;"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.58-1 9.5A7 7 0 0 1 11 20z"></path><path d="M19 2c-2.26 4.33-5.27 7.14-8 10"></path></svg>
             <span>EcoMarket</span>
@@ -23,8 +23,8 @@
             <a href="contacto.html" class="nav-link">Contacto</a>
         </nav>
         <div class="header-icons">
-            <span>🔍</span>
-            <span>🛒</span>
+            <a href="#newsletter-foot" title="Buscar" style="text-decoration: none;"><span>🔍</span></a>
+            <a href="sobre-nosotros.html" title="Carrito" style="text-decoration: none;"><span>🛒</span></a>
         </div>
     </header>
 
@@ -97,13 +97,13 @@
                     <li><a href="#">Preguntas Frecuentes</a></li>
                 </ul>
             </div>
-            <div class="footer-newsletter">
+            <div class="footer-newsletter" id="newsletter-foot">
                 <h4>Newsletter</h4>
                 <p>Suscríbete para recibir tips ecológicos y ofertas.</p>
-                <div class="newsletter-box">
-                    <input type="email" placeholder="Tu correo">
-                    <button type="button">Ok</button>
-                </div>
+                <form class="newsletter-box" action="#" method="GET">
+                    <input type="email" placeholder="Tu correo" required>
+                    <button type="submit">Ok</button>
+                </form>
             </div>
         </div>
         <div class="footer-bottom">

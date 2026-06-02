@@ -10,13 +10,10 @@
     }
 }
 
-
 .product-card {
+
     animation: fadeInUp 1.6s ease backwards;
-}
 
-
-.product-card {
     transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
 }
 
@@ -35,10 +32,10 @@
 }
 
 
-.fav-btn {
+.fav-btn, .fav-btn-label {
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.fav-btn:hover {
+.fav-btn:hover, .fav-btn-label:hover {
     transform: scale(1.2);
 }

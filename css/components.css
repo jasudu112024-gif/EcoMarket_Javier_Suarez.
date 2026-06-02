@@ -22,17 +22,13 @@
     color: var(--blanco);
 }
 
+
 .product-card {
     background-color: var(--blanco);
     border-radius: 12px;
     overflow: hidden; 
     border: 1px solid #f0f0f0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); 
+    
 }
 
 .card-image-container {
@@ -60,6 +56,7 @@
     font-weight: bold;
     padding: 4px 8px;
     border-radius: 4px;
+    z-index: 2;
 }
 
 .fav-btn {
@@ -73,8 +70,8 @@
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 2;
 }
-
 
 .card-info {
     padding: 20px;
@@ -193,7 +190,7 @@
     display: block;
 }
 
-/* COMPONENTES DE CONTACTO */
+
 .contact-info {
     background-color: rgba(255, 255, 255, 0.6);
     padding: 30px;
@@ -244,7 +241,7 @@
     resize: none;
 }
 
-/* COMPONENTES DEL FOOTER */
+
 .footer-brand h4,
 .footer-links h4,
 .footer-newsletter h4 {
@@ -301,13 +298,9 @@
     color: #888;
 }
 
-/* ==========================================
-   MEDIA QUERIES - RESPONSIVE (COMPONENTES)
-   ========================================== */
 
-   @media (max-width: 768px) {
+@media (max-width: 768px) {
     
-    /* Ajustes del Header Global */
     .main-header {
         flex-direction: column;
         gap: 15px;
@@ -315,7 +308,6 @@
         text-align: center;
     }
 
-    /* El menú de navegación se distribuye mejor */
     .nav-menu {
         gap: 15px;
         flex-wrap: wrap;
@@ -326,18 +318,22 @@
         font-size: 0.95rem;
     }
 
-    /* Títulos un poco más pequeños en móvil para que no rompan línea feo */
     .catalog-header h2, 
     .contact-header h2 {
         font-size: 1.8rem;
     }
 
-    /* Tarjetas de producto más compactas */
     .card-info {
         padding: 15px;
     }
 
     .card-title-price h3 {
         font-size: 1.1rem;
+    }
+
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
